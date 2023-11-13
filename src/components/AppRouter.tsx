@@ -1,10 +1,10 @@
 import React, { FunctionComponent, useContext } from "react";
 import { AppContext } from "../context/Context";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { privateRoutes, publicRoutes } from "../routes/Routes";
 
 const AppRouter: FunctionComponent = () => {
-    const {isAuth, setIsAuth} = useContext(AppContext);
+    const {isAuth} = useContext(AppContext);
 
     return (
         isAuth
