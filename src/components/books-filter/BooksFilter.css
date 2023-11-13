@@ -1,0 +1,68 @@
+.booklist-filters-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.booklist-filter-input-container {
+    position: relative;
+}
+.booklist-filter-input {
+    min-width: 335px;
+    padding: 8px 40px 8px 15px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    width: 250px;
+    border-radius: 10px;
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.booklist-filter-input:focus {
+    outline: 2px solid var(--accent-color);
+}
+.booklist-filter-search-btn {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+}
+.booklist-filter-icon {
+    width: 20px;
+    height: 20px;
+    fill: gray;
+}
+/* .booklist-filter-select-container {
+} */
+.booklist-filter-select {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.booklist-filter-select:active,
+.booklist-filter-select:focus,
+.booklist-filter-select:checked {
+    outline: 2px solid var(--accent-color);
+}
+
+@media (min-width: 768px) {
+    .booklist-filters-container {
+        flex-direction: row;
+    }
+    .booklist-filter-input {
+        width: 250px;
+    }
+    .booklist-filter-select {
+        width: 150px;
+    }
+}

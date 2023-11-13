@@ -1,0 +1,110 @@
+.basket-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--accent-color);
+    padding: 12px;
+    border-radius: 5px;
+}
+.basket-item-title {
+    width: 100%;
+    font-size: 20px;
+    color: var(--accent-color);
+}
+.basket-item-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basket-item-count-container {
+    display: flex;
+}
+.basket-item-count-btn {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.minus {
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.basket-item-count-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--accent-color);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.basket-item-count-input {
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    color: #212529;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.plus {
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.basket-item-price {
+    font-size: 18px;
+}
+.basket-item-remove-btn {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.basket-item-remove-btn:hover,
+.basket-item-remove-btn:focus {
+    background: var(--accent-color);
+}
+.basket-item-remove-icon {
+    fill: var(--accent-color);
+    width: 24px;
+    height: 24px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.basket-item-remove-btn:hover .basket-item-remove-icon,
+.basket-item-remove-btn:focus .basket-item-remove-icon {
+    fill: var(--white-color);
+}
+
+@media (min-width: 768px) {
+    .basket-item {
+        flex-wrap: nowrap;
+    }
+    .basket-item-title {
+        width: 60%;
+    }
+    .basket-item-container {
+        width: 40%;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .basket-item-title {
+        width: 70%;
+    }
+    .basket-item-container {
+        width: 30%;
+    }
+}

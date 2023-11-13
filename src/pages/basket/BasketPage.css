@@ -1,0 +1,38 @@
+.basket-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 150px;
+}
+.basket-purchase-btn-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+.basket-purchase-btn {
+    color: var(--white-color);
+    background: var(--accent-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 100px;
+    padding: 12px 28px;
+    border: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.basket-purchase-btn:hover,
+.basket-purchase-btn:focus {
+    background-color: var(--button-bg-hover);
+    color: var(--accent-color);
+}
+.basket-total-price-text {
+    margin-top: 15px;
+    text-align: end;
+    font-size: 24px;
+    padding-right: 10px;
+}
+.basket-total-price {
+    font-weight: bold;
+}
