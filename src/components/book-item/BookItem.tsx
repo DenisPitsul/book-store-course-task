@@ -17,7 +17,11 @@ const BookItem: FunctionComponent<BookItemProps> = ({book}) => {
         <li className='book-item'>
             <div className='book-item-image-container'>
                 <Link className='book-item-image-link' to={`/book/${book.id}`}>
-                    <img className='book-item-image' src={book.image === '' ? notFoundBook : book.image} alt={bookTitle}/>
+                    <img 
+                        className={book.image === '' ? '' : 'book-item-image'} 
+                        src={book.image === '' ? notFoundBook : book.image} 
+                        alt={bookTitle}
+                    />
                 </Link>
             </div>
             <div className='book-item-body'>
