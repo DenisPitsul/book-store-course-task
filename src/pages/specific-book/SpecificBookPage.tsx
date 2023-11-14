@@ -33,7 +33,7 @@ const SpecificBookPage: FunctionComponent = () => {
             else
                 setCount(Number.parseInt(e.target.value))
             if(specificBook?.price)
-                setTotalPrice(count * specificBook?.price)
+                setTotalPrice(Number.parseFloat((count * specificBook?.price).toFixed(2)))
         }
     }
 
