@@ -67,9 +67,9 @@ body {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
     .container {
-        width: 1200px;
+        width: 1220px;
         padding-left: 32px;
         padding-right: 32px;
     }

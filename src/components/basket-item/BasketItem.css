@@ -100,7 +100,7 @@ input::-webkit-inner-spin-button {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
     .basket-item-title {
         width: 70%;
     }

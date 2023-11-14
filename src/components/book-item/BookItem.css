@@ -15,9 +15,10 @@
     align-items: center;
 }
 /* .book-item-image-link {
-}
-.book-item-image {
 } */
+.book-item-image {
+    height: 328px;
+}
 .book-item-body {
     padding: 15px;
 }
@@ -58,7 +59,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
     .book-item {
         width: calc((100% - 75px) / 4);
     }
