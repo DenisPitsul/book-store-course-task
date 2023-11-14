@@ -1,6 +1,5 @@
 .header {
     border-bottom: 2px solid var(--accent-color);
-    padding: 10px 0;
 }
 /* .header-nav {
 } */
@@ -12,6 +11,7 @@
 .header-home-link {
     color: var(--accent-color);
     font-size: 18px;
+    padding: 15px 0;
 }
 .header-content {
     display: flex;
