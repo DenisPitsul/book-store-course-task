@@ -26,10 +26,10 @@ const SpecificBookPage: FunctionComponent = () => {
 
     const onCountInputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(specificBook?.amount) {
-            if(Number.parseInt(e.target.value) < 1) 
+            if(Number.parseInt(e.target.value) < 1 || e.target.value === '') 
                 setCount(1)
             else if(Number.parseInt(e.target.value) > specificBook?.amount)
-                setCount(specificBook?.amount)        
+                setCount(specificBook?.amount)  
             else
                 setCount(Number.parseInt(e.target.value))
             if(specificBook?.price)

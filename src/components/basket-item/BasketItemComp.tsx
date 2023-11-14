@@ -14,7 +14,7 @@ const BasketItemComp: FunctionComponent<BasketItemProps>
     = ({basketItem, setBasketItem, removeBasketItem}) => {
 
     const onCountInputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if(Number.parseInt(e.target.value) < 1) 
+        if(Number.parseInt(e.target.value) < 1 || e.target.value === '') 
             setBasketItem({book: basketItem.book, amount: 1})
         else if(Number.parseInt(e.target.value) > basketItem.book.amount)
             setBasketItem({book: basketItem.book, amount: basketItem.book.amount})
