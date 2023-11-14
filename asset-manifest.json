@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/book-store-course-task/static/css/main.868610f3.css",
+    "main.css": "/book-store-course-task/static/css/main.d93f5546.css",
     "main.js": "/book-store-course-task/static/js/main.c674856a.js",
     "static/media/avatar.png": "/book-store-course-task/static/media/avatar.0d14c6999b4a5c8e86a7.png",
     "static/media/roboto-latin-500-normal.woff2": "/book-store-course-task/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -63,11 +63,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/book-store-course-task/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/book-store-course-task/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/book-store-course-task/index.html",
-    "main.868610f3.css.map": "/book-store-course-task/static/css/main.868610f3.css.map",
+    "main.d93f5546.css.map": "/book-store-course-task/static/css/main.d93f5546.css.map",
     "main.c674856a.js.map": "/book-store-course-task/static/js/main.c674856a.js.map"
   },
   "entrypoints": [
-    "static/css/main.868610f3.css",
+    "static/css/main.d93f5546.css",
     "static/js/main.c674856a.js"
   ]
 }
