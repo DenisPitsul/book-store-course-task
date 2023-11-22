@@ -1,6 +1,7 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useEffect } from "react";
 import './BooksFilter.css';
 import icons from "../../img/icons.svg";
+import { URLSearchParams } from "url";
 
 interface BooksFilterParams {
     level: string
@@ -9,11 +10,21 @@ interface BooksFilterParams {
 }
 
 interface BooksFilterProps {
+    searchParams: URLSearchParams
     filter: BooksFilterParams,
     setFilter(filter: BooksFilterParams): void;
 }
 
-const BooksFilter: FunctionComponent<BooksFilterProps> = ({filter, setFilter}) => {
+const BooksFilter: FunctionComponent<BooksFilterProps> = ({searchParams, filter, setFilter}) => {
+
+    useEffect(() => {
+        setFilter({
+            level: searchParams.get('level') || 'any',
+            query: searchParams.get('query') || '',
+            priceOption: searchParams.get('priceOption') || 'any'
+        })
+    }, [searchParams, setFilter])
+
     return (
         <div className="booklist-filters-container">
             <div className="booklist-filter-select-container">

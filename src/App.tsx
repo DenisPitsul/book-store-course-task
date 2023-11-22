@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import { AppContext } from './context/Context';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import AppRouter from './components/AppRouter';
 import booksData from './data/books.json';
 import { BasketItem, IBook } from "./types/types";
@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
+    <BrowserRouter basename='/book-store-course-task'>
       <AppContext.Provider value={{
         isAuth,
         setIsAuth,
@@ -46,7 +46,7 @@ function App() {
         </main>
         <Footer/>
       </AppContext.Provider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
